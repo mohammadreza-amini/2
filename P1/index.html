@@ -7,11 +7,16 @@
     <title> Number Guessing Game</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Number Guessing Game</h1>
+    <div class="container" id="game">
+        <h1 id="title">Number Guessing Game</h1>
         <p>Enter a number between 1-100 and click the button</p>
         <input type="number" placeholder="Enter number" min="1" max="100">
         <button>Guess</button>
+        <div id="historyArea">
+            <h2 class="test">Your Previous Guesses: </h2>
+            <ol id="historyList">
+            </ol>
+        </div>
     </div>
     <script src="./test.js"></script>
 </body>
