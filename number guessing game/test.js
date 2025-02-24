@@ -1,4 +1,4 @@
-let ranNumber = Math.floor(Math.random() * 100);
+let ranNumber = Math.floor(Math.random() * 100) + 1;
 document.querySelector("#buttonArea").addEventListener('click', () => {
     let userGuess = Number(document.querySelector("#userGuess").value);
     let showResut = document.querySelector('.test');
@@ -8,8 +8,8 @@ document.querySelector("#buttonArea").addEventListener('click', () => {
         } else if (userGuess < ranNumber) {
             showResut.innerHTML = "too short";
         } else {
+            document.querySelector('.background').style.backgroundColor ="rgba(66, 226, 66, 0.9)";
             showResut.innerHTML = "you win!";
-            alert("you win!");
         }
     }
 });
